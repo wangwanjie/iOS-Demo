@@ -1,0 +1,94 @@
+<html>
+<head>
+<!-- 本页面的标题!! -->
+<title>编号规范</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK rel=stylesheet type="text/css" href="../help.css">
+</HEAD>
+
+<BODY>
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>编号规范</h1>
+在制作上下文相关帮助时，必须给每一个html主题页面定义一个别名和编号，软件开发人员通过编号将功能项与该功能项的帮助文件关联起来，达到软件使用者能实时查询每一个功能项的帮助信息，而不用专门打开帮助文档，并费力查找该功能的帮助信息。
+即通过编号关联，软件使用者在使用软件的过程中，当鼠标定位到菜单项、功能按钮或者程序界面的时候，单击F1键能打开对应功能项的帮助文件。</p>
+<p>为了便于理解和维护，别名和编号必须规范化。在这里，给出一个规范标准：</p>
+<ol>
+	<li>别名（Alias）的定义格式为：IDH_别名，别名应该简单明了，让人一眼就能看出关联的是哪个功能，别名一般采用功能项的缩写并加上功能项的编号，比如本帮助文档中的附录，其别名为IDH_fl04；</li>
+	<li>软件一般会按功能模块进行划分，而每一个功能模块可能还有子功能模块，最后才到具体的功能点。因此，帮助编号建议为8位，每两位代表一级，级次从左至右降低，
+	每一级模块的编号都从01开始，一般主界面中能直接看见的功能菜单为第一级功能模块。以年报举例：<table width="338" class="Items" id="table1">
+	<tr>
+		<td width="213" colspan="4"><b>功能</b></td>
+		<td width="115"><b>编号</b></td>
+	</tr>
+	<tr class="gray">
+		<td valign="middle" colspan="4" height="23">任务</td>
+		<td height="23"><font color="#008000">01</font>000000</td>
+	</tr>
+	<tr class="gray">
+	    <td width="17" valign="middle" height="17">　　　</td>
+		<td valign="middle" colspan="3" height="17">任务管理</td>
+		<td height="17">01<font color="#008000">01</font>0000</td>
+	</tr>
+	<tr class="gray">
+  		<td width="17" valign="middle">　　　</td>
+ 		<td width="46" valign="middle">　　　</td>
+		<td valign="middle" width="115" colspan="2">搜索任务</td>
+		<td>0101<font color="#008000">01</font>00</td>
+	</tr>
+		<tr class="gray">
+  		<td width="17" valign="middle">　　　</td>
+ 		<td width="46" valign="middle">　　　</td>
+ 		<td width="48" valign="middle">　　　</td>	
+		<td valign="middle" height="17" width="90">选择按钮</td>
+		<td height="17">010101<font color="#008000">01</font></td>
+	</tr>
+	<tr class="gray">
+		<td valign="middle" colspan="4" height="23">高级</td>
+		<td height="23"><font color="#008000">02</font>000000</td>
+	</tr>
+	<tr class="gray">
+	    <td width="17" valign="middle" height="17">　　　</td>
+		<td valign="middle" colspan="3" height="17">封面代码定义</td>
+		<td height="17">02<font color="#008000">01</font>0000</td>
+	</tr>  
+	<tr class="gray">
+	    <td width="17" valign="middle" height="17">　　　</td>
+		<td valign="middle" colspan="3" height="17">报表定义</td>
+		<td height="17">02<font color="#008000">02</font>0000</td>
+	</tr>  
+
+	</table>
+	</li>
+		 
+</ol>
+<h2>说明</h2>
+<ol>
+	<li>编号的最后两位，一般用来作为帮助目录中不能直接查到，而软件中需要用F1键查看的帮助主题页面的编号；</li>
+	<li>帮助编号位数可以根据软件的规模进行加减；</li>
+	<li>并非每一个主题页面都需要编号，只有需要使用F1键查找帮助文件的主题文件才需要编号。</li>
+</ol>
+<h2>示例</h2>
+<p style="padding-left:50px;"><a class="a" href="helplist.htm">帮助模板的主题规划列表</a></p>
+<dl>
+	<dt><IMG src="../images/link.jpg">主题链接</dt>
+ 	<dd><img src="../images/arrow.jpg">
+	<a class="a" href="list.htm">帮助主题规划列表</a></dd>
+	<dd><img src="../images/arrow.jpg">
+	<a class="a" href="notice.htm">注意事项</a></dd>
+</dl>
+</div>
+
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

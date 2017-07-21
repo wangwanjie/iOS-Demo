@@ -1,0 +1,71 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=帮助模板.chm
+Contents file=Contents.hhc
+Default Window=main
+Default topic=html\index.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x804 中文(中国)
+Title=帮助模板
+
+[WINDOWS]
+main="帮助模板","Contents.hhc","Index.hhk","html\cover.htm","html\index.htm",,,,,0x43520,,0x304e,[52,22,959,697],0x80000000,,,,,,0
+
+
+[FILES]
+html\appendix.htm
+html\common.htm
+html\Company.htm
+html\content.htm
+html\CSS.htm
+html\CSSHtml.htm
+html\ExpandCollapse.htm
+html\function.htm
+html\glossary.htm
+html\Help.htm
+html\helplist.htm
+html\ID.htm
+html\index.htm
+html\initial.htm
+html\list.htm
+html\notice.htm
+html\popmenu.htm
+html\popup.htm
+html\register.htm
+html\support.htm
+html\SysIntro.htm
+html\tools.htm
+html\updown.htm
+html\cover.htm
+
+[ALIAS]
+IDH_bz01=html\content.htm ; 帮助内容
+IDH_bz0101=html\SysIntro.htm ; 系统简介
+IDH_bz0102=html\initial.htm ; 安装、启动与卸载
+IDH_bz0103=html\function.htm ; 功能介绍
+IDH_bz0104=html\list.htm ; 帮助主题列表规划
+IDH_bz0105=html\notice.htm ; 注意事项
+IDH_cy03=html\common.htm ; 常用页面
+IDH_cy0301=html\Company.htm ; 公司简介
+IDH_cy0302=html\support.htm ; 技术支持
+IDH_cy0303=html\register.htm ; 软件注册
+IDH_cy0304=html\Help.htm ; 使用帮助
+IDH_fl04=html\appendix.htm ; 附录
+IDH_fl0401=html\tools.htm ; 帮助制作工具介绍
+IDH_fl0402=html\ID.htm ; 编号规范
+IDH_fl0403=html\glossary.htm ; 术语介绍
+IDH_ys02=html\CSSHtml.htm ; CSS样式及动态页面的使用
+IDH_ys0201=html\CSS.htm ; CSS层叠样式表单
+IDH_ys0202=html\popup.htm ; 弹出窗口的使用
+IDH_ys0203=html\ExpandCollapse.htm ; 显示隐藏的使用
+IDH_ys0204=html\popmenu.htm ; 弹出菜单的使用
+IDH_ys0205=html\updown.htm ; 翻页按钮的使用
+
+[MAP]
+#include INCLUDE.H
+
+[INFOTYPES]
+

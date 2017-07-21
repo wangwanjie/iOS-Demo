@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>弹出菜单的使用</TITLE>
+<LINK rel=stylesheet type="text/css" href="../help.css">
+</HEAD>
+
+<BODY>
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>弹出菜单的使用</h1>
+<h2>功能</h2>
+<p>弹出菜单在网页制作中是一种非常常用的菜单方式，这种菜单不但制作简单，而且效果也很好。比如需要链接到其他网页或者其他主题的时候，就可以采用弹出菜单。弹出菜单的实现方式有多种，下面介绍其中一种，其他方法有待补充。</p>
+<h2>操作步骤</h2>
+<ol>
+	<li>直接在需要使用弹出菜单的html文件的body中，加入以下代码即可：</li><br>
+	<i>&lt;OBJECT id=candomble type=&quot;application/x-oleobject&quot; classid=&quot;clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11&quot; 
+	codebase=&quot;Hhctrl.ocx# Version=4,72,8252,0&quot;&nbsp;width=100&nbsp; height=100 align=texttop&gt;<br>&lt;PARAM name=&quot;Command&quot; value=&quot;Related Topics,menu&quot;&gt;<br>&lt;PARAM name=&quot;text&quot; value=&quot;Text:<font color="#800080">网页链接</font>&quot;&gt;<br>&lt;PARAM name=&quot;Item1&quot; value=&quot;<font color="#800080">北京久其</font>;<font color="#800080">http://www.jiuqi.com.cn/</font>&quot;&gt;<br>&lt;PARAM 
+	name=&quot;Item2&quot; value=&quot;<font color="#800080">google</font>;<font color="#800080">http://http://www.google.cn/</font>&quot;&gt;<br>&lt;PARAM 
+	name=&quot;Item3&quot; value=&quot;<font color="#800080">百度</font>;<font color="#800080">http://www.baidu.com/</font>&quot;&gt;<br>&lt;PARAM 
+	name=&quot;Item3&quot; value=&quot;<font color="#800080">公司简介</font>;<font color="#800080">Company.htm</font>&quot;&gt;
+	<br>&lt;/OBJECT&gt;</i>
+</ol>
+<h2>说明</h2>
+<p>代码中的紫色字体部分，表示自定义部分，即帮助制作者可以根据需要自行修改。</p>
+<h2>示例</h2>
+<p style="padding-left:50px">
+<OBJECT id=candomble type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" codebase="Hhctrl.ocx#Version=4,72,8252,0"
+ width=100 height=100 align=texttop>
+    <PARAM name="Command" value="Related Topics,menu">
+  	<PARAM name="text" value="Text:页面链接">
+	<PARAM name="Item1" value="北京久其;http://www.jiuqi.com.cn/">
+	<PARAM name="Item2" value="goole;http://http://www.google.cn/">
+	<PARAM name="Item3" value="百度;http://www.baidu.com/">
+	<PARAM name="Item4" value="公司简介;Company.htm">
+</OBJECT>
+</p>
+</div>
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

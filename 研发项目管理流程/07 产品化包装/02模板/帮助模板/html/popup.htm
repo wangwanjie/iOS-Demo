@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>弹出窗口的使用</TITLE>
+<meta name="Microsoft Theme" content="none, default">
+<LINK rel=stylesheet type="text/css" href="../help.css">
+<script language=javascript src="../script/popup.js"></script>
+</HEAD>
+
+<BODY>
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>弹出窗口的使用</h1>
+<h2>功能</h2>
+<p>在各种联机帮助中，经常能看到弹出窗口。弹出窗口，顾名思义，即在当前的窗口中弹出一个新窗口，一般弹出窗口都比较小，主要用于名词解释、公告、新闻、还有广告。</p>
+<p>在帮助模板中，提供了弹出窗口功能，该功能通过编写脚本来实现。下面介绍怎样制作一个弹出窗口。</p>
+<h2>操作步骤</h2>
+<ol>
+	<li>编写脚本函数，主要代码如下，具体可以参见<a class="caseindex" href="../script/popup.js">popup.js</a>；
+	<i>
+	<br>function popup(str){
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(sh = new ActiveXObject("Internet.HHCtrl"))	{
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sh.TextPopup(str,"<font color="#800080">宋体</font>,<font color="#800080">10</font>",<font color="#800080">9</font>,<font color="#800080">9</font>,<font color="#800080">0x800080</font>,<font color="#800080">0xFFFFFF</font>);
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sh = "";
+	<br> &nbsp;&nbsp;&nbsp;&nbsp; }
+	<br> }</i></li>
+
+	<li>在需要使用弹出窗口的html文件的“&lt;head&gt;&lt;/head&gt;”中调用该脚本函数：
+	<br><i>&lt;head&gt;<br>&lt;script language=javascript src=&quot;../script/popup.js&quot;&gt;&lt;/script&gt;<br>
+	&lt;/head&gt;</i></li>
+	<li>在需要设计弹出窗口的部分中加入弹出窗口中的内容即可：<br><i>&lt;body&gt;<br>&lt;a href=&quot;Javascript:popup('<font color="#800080">弹出窗口中的内容'</font>)&quot;&gt;<font color="#800080">弹出窗口</font>&lt;/a&gt;<br>
+	&lt;/body&gt;</i></li>
+</ol>
+<h2>说明</h2>
+<p>代码中的紫色字体部分，表示自定义部分，即帮助制作者可以根据需要自行修改。</p>
+<h2>示例</h2>
+<p style="padding-left:50px"><a class="caseindex" href="Javascript:popup('这就是一个弹出窗口，你学会了吗？')">点击这里</a></p>
+</div>
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041681D21C1E663400322D21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041681D11C1E663400322D21 /* main.m */; };
+		041681D51C1E663400322D21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041681D41C1E663400322D21 /* AppDelegate.m */; };
+		041681D81C1E663400322D21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041681D71C1E663400322D21 /* ViewController.m */; };
+		041681DB1C1E663400322D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041681D91C1E663400322D21 /* Main.storyboard */; };
+		041681DD1C1E663400322D21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041681DC1C1E663400322D21 /* Images.xcassets */; };
+		041681E01C1E663400322D21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041681DE1C1E663400322D21 /* LaunchScreen.xib */; };
+		041681EC1C1E663400322D21 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041681EB1C1E663400322D21 /* _______Tests.m */; };
+		042823251C23B05E0033A080 /* LGKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042823201C23B05E0033A080 /* LGKeyboardView.m */; };
+		042823261C23B05E0033A080 /* LGMenuSegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042823221C23B05E0033A080 /* LGMenuSegView.m */; };
+		042823271C23B05E0033A080 /* LGTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042823241C23B05E0033A080 /* LGTextFieldView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041681E61C1E663400322D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041681C41C1E663400322D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041681CB1C1E663400322D21;
+			remoteInfo = "随机键盘自定义";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041681CC1C1E663400322D21 /* 随机键盘自定义.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随机键盘自定义.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041681D01C1E663400322D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041681D11C1E663400322D21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041681D31C1E663400322D21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		041681D41C1E663400322D21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		041681D61C1E663400322D21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		041681D71C1E663400322D21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		041681DA1C1E663400322D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041681DC1C1E663400322D21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		041681DF1C1E663400322D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		041681E51C1E663400322D21 /* 随机键盘自定义Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "随机键盘自定义Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041681EA1C1E663400322D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041681EB1C1E663400322D21 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______Tests.m"; sourceTree = "<group>"; };
+		0428231F1C23B05E0033A080 /* LGKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGKeyboardView.h; sourceTree = "<group>"; };
+		042823201C23B05E0033A080 /* LGKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGKeyboardView.m; sourceTree = "<group>"; };
+		042823211C23B05E0033A080 /* LGMenuSegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMenuSegView.h; sourceTree = "<group>"; };
+		042823221C23B05E0033A080 /* LGMenuSegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMenuSegView.m; sourceTree = "<group>"; };
+		042823231C23B05E0033A080 /* LGTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTextFieldView.h; sourceTree = "<group>"; };
+		042823241C23B05E0033A080 /* LGTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTextFieldView.m; sourceTree = "<group>"; };
+		04E251F51C5E31320008454F /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041681C91C1E663400322D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041681E21C1E663400322D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041681C31C1E663400322D21 = {
+			isa = PBXGroup;
+			children = (
+				041681CE1C1E663400322D21 /* 随机键盘自定义 */,
+				041681E81C1E663400322D21 /* 随机键盘自定义Tests */,
+				041681CD1C1E663400322D21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041681CD1C1E663400322D21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041681CC1C1E663400322D21 /* 随机键盘自定义.app */,
+				041681E51C1E663400322D21 /* 随机键盘自定义Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041681CE1C1E663400322D21 /* 随机键盘自定义 */ = {
+			isa = PBXGroup;
+			children = (
+				041681D31C1E663400322D21 /* AppDelegate.h */,
+				041681D41C1E663400322D21 /* AppDelegate.m */,
+				041681D61C1E663400322D21 /* ViewController.h */,
+				041681D71C1E663400322D21 /* ViewController.m */,
+				04E251F51C5E31320008454F /* Prefix.pch */,
+				0428231E1C23B05E0033A080 /* YLGTextField */,
+				041681D91C1E663400322D21 /* Main.storyboard */,
+				041681DC1C1E663400322D21 /* Images.xcassets */,
+				041681DE1C1E663400322D21 /* LaunchScreen.xib */,
+				041681CF1C1E663400322D21 /* Supporting Files */,
+			);
+			path = "随机键盘自定义";
+			sourceTree = "<group>";
+		};
+		041681CF1C1E663400322D21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041681D01C1E663400322D21 /* Info.plist */,
+				041681D11C1E663400322D21 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		041681E81C1E663400322D21 /* 随机键盘自定义Tests */ = {
+			isa = PBXGroup;
+			children = (
+				041681EB1C1E663400322D21 /* _______Tests.m */,
+				041681E91C1E663400322D21 /* Supporting Files */,
+			);
+			path = "随机键盘自定义Tests";
+			sourceTree = "<group>";
+		};
+		041681E91C1E663400322D21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041681EA1C1E663400322D21 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0428231E1C23B05E0033A080 /* YLGTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0428231F1C23B05E0033A080 /* LGKeyboardView.h */,
+				042823201C23B05E0033A080 /* LGKeyboardView.m */,
+				042823211C23B05E0033A080 /* LGMenuSegView.h */,
+				042823221C23B05E0033A080 /* LGMenuSegView.m */,
+				042823231C23B05E0033A080 /* LGTextFieldView.h */,
+				042823241C23B05E0033A080 /* LGTextFieldView.m */,
+			);
+			name = YLGTextField;
+			path = LGTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041681CB1C1E663400322D21 /* 随机键盘自定义 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041681EF1C1E663400322D21 /* Build configuration list for PBXNativeTarget "随机键盘自定义" */;
+			buildPhases = (
+				041681C81C1E663400322D21 /* Sources */,
+				041681C91C1E663400322D21 /* Frameworks */,
+				041681CA1C1E663400322D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "随机键盘自定义";
+			productName = "随机键盘自定义";
+			productReference = 041681CC1C1E663400322D21 /* 随机键盘自定义.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041681E41C1E663400322D21 /* 随机键盘自定义Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041681F21C1E663400322D21 /* Build configuration list for PBXNativeTarget "随机键盘自定义Tests" */;
+			buildPhases = (
+				041681E11C1E663400322D21 /* Sources */,
+				041681E21C1E663400322D21 /* Frameworks */,
+				041681E31C1E663400322D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041681E71C1E663400322D21 /* PBXTargetDependency */,
+			);
+			name = "随机键盘自定义Tests";
+			productName = "随机键盘自定义Tests";
+			productReference = 041681E51C1E663400322D21 /* 随机键盘自定义Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041681C41C1E663400322D21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "杨林贵";
+				TargetAttributes = {
+					041681CB1C1E663400322D21 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					041681E41C1E663400322D21 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 041681CB1C1E663400322D21;
+					};
+				};
+			};
+			buildConfigurationList = 041681C71C1E663400322D21 /* Build configuration list for PBXProject "随机键盘自定义" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041681C31C1E663400322D21;
+			productRefGroup = 041681CD1C1E663400322D21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041681CB1C1E663400322D21 /* 随机键盘自定义 */,
+				041681E41C1E663400322D21 /* 随机键盘自定义Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041681CA1C1E663400322D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041681DB1C1E663400322D21 /* Main.storyboard in Resources */,
+				041681E01C1E663400322D21 /* LaunchScreen.xib in Resources */,
+				041681DD1C1E663400322D21 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041681E31C1E663400322D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041681C81C1E663400322D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042823261C23B05E0033A080 /* LGMenuSegView.m in Sources */,
+				042823271C23B05E0033A080 /* LGTextFieldView.m in Sources */,
+				041681D81C1E663400322D21 /* ViewController.m in Sources */,
+				041681D51C1E663400322D21 /* AppDelegate.m in Sources */,
+				042823251C23B05E0033A080 /* LGKeyboardView.m in Sources */,
+				041681D21C1E663400322D21 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041681E11C1E663400322D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041681EC1C1E663400322D21 /* _______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041681E71C1E663400322D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041681CB1C1E663400322D21 /* 随机键盘自定义 */;
+			targetProxy = 041681E61C1E663400322D21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041681D91C1E663400322D21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041681DA1C1E663400322D21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041681DE1C1E663400322D21 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041681DF1C1E663400322D21 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041681ED1C1E663400322D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041681EE1C1E663400322D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041681F01C1E663400322D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "随机键盘自定义/Prefix.pch";
+				INFOPLIST_FILE = "随机键盘自定义/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		041681F11C1E663400322D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "随机键盘自定义/Prefix.pch";
+				INFOPLIST_FILE = "随机键盘自定义/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		041681F31C1E663400322D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "随机键盘自定义Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/随机键盘自定义.app/随机键盘自定义";
+			};
+			name = Debug;
+		};
+		041681F41C1E663400322D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "随机键盘自定义Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/随机键盘自定义.app/随机键盘自定义";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041681C71C1E663400322D21 /* Build configuration list for PBXProject "随机键盘自定义" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041681ED1C1E663400322D21 /* Debug */,
+				041681EE1C1E663400322D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041681EF1C1E663400322D21 /* Build configuration list for PBXNativeTarget "随机键盘自定义" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041681F01C1E663400322D21 /* Debug */,
+				041681F11C1E663400322D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041681F21C1E663400322D21 /* Build configuration list for PBXNativeTarget "随机键盘自定义Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041681F31C1E663400322D21 /* Debug */,
+				041681F41C1E663400322D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041681C41C1E663400322D21 /* Project object */;
+}

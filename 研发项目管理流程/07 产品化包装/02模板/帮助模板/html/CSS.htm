@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>CSS层叠样式表单</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK rel=stylesheet type="text/css" href="../help.css">
+</HEAD>
+
+<BODY>
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>CSS层叠样式表单</h1>
+<h2>功能</h2>
+<p>不同的网页会有不同的样式和风格，为了统一公司产品帮助的样式和风格，也为了能让帮助制作者快速制作出一份帮助文档，我们提供了一个通用的CSS样式表单：<a class="caseindex" href="../help.css">help.css</a>，供大家在制作帮助时使用。</p>
+<table width="603" class="Items">
+	<tr>
+		<td width="121"><b>选择符</b></td>
+		<td width="76"><b>作用</b></td>
+		<td width="167"><b>样式</b></td>
+		<td width="143"><b>在html中使用方法</b></td>
+		<td width="74"><b>用途</b></td>
+	</tr>
+	<tr class="gray">
+		<td valign="middle">body, table </td>
+		<td>body和table的整体风格</td>
+		<td>定义body和table的字体为verdana, tahoma, arial或者宋体；字号：12px（象素）；字体颜色：黑色；文字装饰为：无；无外延边距</td>
+		<td>直接使用html标签即可，&lt;body&gt; &lt;/body&gt;、&lt;table&gt; &lt;/table&gt;</td>
+		<td>统一body、table的风格，每一个主题页面都使用</td>
+	</tr>
+	<tr class="gray">
+		<td valign="middle">#head</td>
+		<td>页面顶部左侧</td>
+		<td>背景颜色：#005B7F；字体颜色：#FFFFFF（白色）；字号：14px；字体为粗体；高度：20px；文本位置：居中；垂直位置：居中；内
+		补丁边距
+		（上、右、下、左）：8px 25px 3px 20px；空格处理方式为：强制在同一行内显示所有文本，直到文本结束或者遭遇br对象</td>
+		<td>id=&quot;head&quot;</td>
+		<td>定义页面顶部左侧样式</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">#headbg</td>
+		<td>页面顶部右侧</td>
+		<td>背景颜色#A4CBDB；宽度：100%</td>
+		<td>id=&quot;headbg&quot;</td>
+		<td>定义页面顶部右侧样式</td>
+	</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">#foot</td>
+		<td>页面底部</td>
+		<td>文本位置：居中；字体颜色：#999999（灰色）；字号：10px；<br>
+		内补丁：0px 10px 0px 10px；页面位置：相对；上边框：1px solid（固态） #CCCCCC；上部外延边距：50px；高度：30px</td>
+		<td>id=&quot;foot&quot;</td>
+		<td>定义页面底部，一般为“版权所有”字样</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">#content</td>
+		<td>正文部分</td>
+		<td>外延边距（上、右、下、左）：0px 20px 0px 20px；行高：22px</td>
+		<td>id=&quot;content&quot;</td>
+		<td>定义正文部分，即夹在页面顶部和底部中间部分的样式</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">#content p</td>
+		<td>正文中的段落</td>
+		<td>行高：20px；外延上边距: 1em（相对长度单位）；外延底部边距：1em</td>
+		<td>直接在正文部分写&lt;p&gt;&lt;/p&gt;即可</td>
+		<td>定义正文中的段落的样式</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">h1</td>
+		<td>一级标题</td>
+		<td>字号：15px；外延边距（上、右、下、左）：40px 0px 20px 0px；字体颜色：#000080；下边框：1px solid 
+		#99999999</td>
+		<td>&lt;h1&gt;&lt;/h1&gt;</td>
+		<td>用于功能项名称，如本页面中的”CSS层叠样式表单”及下划线</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">h2</td>
+		<td>二级标题</td>
+		<td>字号：12px；外延上边距：1.2em；外延底边距：0.5em；字体加粗</td>
+		<td>&lt;h2&gt;&lt;/h2&gt;</td>
+		<td>用于一级标题下，如功能介绍页面中的：功能、操作步骤和说明</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">h3</td>
+		<td>三级标题</td>
+		<td>字号：12px；外延上边距：1.2em；字体加粗</td>
+		<td>&lt;h3&gt;&lt;/h3&gt;</td>
+		<td>用于二级标题下，比较少用</td>
+	</tr>
+		</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">h4</td>
+		<td>四级标题</td>
+		<td>字号：12px；外延上边距：0.5em；字体加粗</td>
+		<td>&lt;h4&gt;&lt;/h4&gt;</td>
+		<td>比较少用</td>
+	</tr>	</tr>
+		<tr class="gray">
+  		<td valign="middle" width="121">dl</td>
+		<td rowspan="2">列表</td>
+		<td>外延左边距：3em；外延底边距：1em</td>
+		<td rowspan="2">&lt;dl&gt;<br>&nbsp; &lt;dt&gt; &lt;/dt&gt;
+		<br>&lt;/dl&gt;</td>
+		<td rowspan="2">用于主题链接</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">dt</td>
+		<td>字体加粗；外延底边距：2em</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">ol</td>
+		<td rowspan="2">有序列表编号</td>
+		<td>外延顶边距：0.5em；外延左边距：2em；编号样式：阿拉伯数字</td>
+		<td rowspan="2">&lt;ol&gt;<br>&nbsp;&nbsp; &lt;li&gt; &lt;/li&gt;
+		<br>&lt;/ol&gt;</td>
+		<td rowspan="2">用于描述操作步骤，或者说明部分</td>
+	</tr>
+	<tr class="gray">
+  	<td valign="middle" width="121">li</td>
+		<td>外延底边距：0.5em，行高：1.5em</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">ul</td>
+		<td>无序列表编号</td>
+		<td>外延顶边距：0.5em；外延左边距：1.5em</td>
+		<td>&lt;ul&gt;<br>&nbsp;&nbsp; &lt;li&gt; &lt;/li&gt;
+		<br>&lt;/ul&gt;</td>
+		<td>用于罗列内容</td>
+	</tr>
+<tr class="gray">
+  		<td valign="middle" width="121">ol ul</td>
+		<td>有序和无序混和列表编号</td>
+		<td>外延顶边距：0.5em；外延左边距：1.5em；无序编号样式为实心圆</td>
+		<td>&lt;ol&gt;<br>&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+		&nbsp;&nbsp;
+		&lt;li&gt;&lt;/li&gt;<br>&lt;/ol&gt;</td>
+		<td>用于操作步骤或者说明中有序列表编号下还存在罗列内容的情况</td>
+	</tr>
+
+	<tr class="gray">
+  		<td valign="middle" width="121">table.Items</td>
+		<td>表格内容</td>
+		<td>外延边距：20px 0px 10px 0px；行高：130%（表示1.3倍行距）</td>
+		<td>&lt;table class=&quot;Items&quot;&gt;</td>
+		<td>定义正文部分的表格</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">.gray </td>
+		<td>灰色背景</td>
+		<td>背景颜色：#F1F1F1（灰色）；高：20px</td>
+		<td>class=&quot;gray&quot;</td>
+		<td>定义表格单元格的背景颜色和高度</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">caption</td>
+		<td>表格标题</td>
+		<td>行高：250%（2.5倍行距）</td>
+		<td>&lt;caption&gt;&lt;/caption&gt;</td>
+		<td>用于表格标题</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">a:visited.caseindex</td>
+		<td>已经访问过的超链接</td>
+		<td>颜色：#0000FF；文字无装饰（即没有下划线）</td>
+		<td rowspan="4">&lt;a&gt;&lt;/a&gt;或者&lt;a class=caseindex&gt;&lt;/a&gt;</td>
+		<td rowspan="4">用于超链接，比如主题链接，外部网页链接，或者邮箱链接</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">a:link.caseindex</td>
+		<td>未访问超链接</td>
+		<td>颜色：blue；文字无装饰（即没有下划线）</td>
+	</tr>	
+	<tr class="gray">
+  		<td valign="middle" width="121">a:active.caseindex</td>
+		<td>被激活的超链接</td>
+		<td>颜色：blue；文字无装饰（即没有下划线）</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">a:.caseindex</td>
+		<td>超链接</td>
+		<td>鼠标定位时，超链接颜色为blue；鼠标离开时，超链接颜色为black</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">.pop</td>
+		<td>文本装饰</td>
+		<td>文本装饰为没有，即没有下划线或者闪烁等</td>
+		<td>class=&quot;pop&quot;</td>
+		<td>用于去掉需要弹出窗口的文字的下划线</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">#PageBtn</td>
+		<td>翻页按钮位置</td>
+		<td>位置：绝对位置；右边距：25px；顶边距：8px</td>
+		<td>id=&quot;PageBtn&quot;</td>
+		<td rowspan="2">用于主题页面中的翻页按钮</td>
+	</tr>
+	<tr class="gray">
+  		<td valign="middle" width="121">#PageBtn img</td>
+		<td>每个翻页按钮图标</td>
+		<td>边框为0（无边框）；外延边距：0px 4px 0px 4px</td>
+		<td>直接使用&lt;img src=&quot;图标位置&quot;&gt;</td>
+	</tr>
+</table>
+
+<dl>
+	<dt><img src="../images/link.jpg">主题链接</dt>
+	<dd><a class="a" href="CSSHtml.htm">CSS样式及动态页面的使用</a></dd>
+	<dd><a class="a" href="notice.htm">注意事项</a></dd>
+	</dl>
+
+</div>
+
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

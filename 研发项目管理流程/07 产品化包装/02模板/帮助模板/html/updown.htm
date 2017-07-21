@@ -1,0 +1,95 @@
+<html>
+<head>
+<!-- 本页面的标题!! -->
+<title>翻页按钮的使用</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK rel=stylesheet type="text/css" href="../help.css">
+<script language="JavaScript" fptype="MM_reloadPage(true)"src="../script/page.js"></script>
+</HEAD>
+
+<BODY>
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>翻页按钮的使用</h1>
+<div id="PageBtn">
+	<!-- 上一级链接 --> 
+	<a title=上一级 href="content.htm"> <img src="../images/up.gif" style="filter:alpha(opacity=100)" onMouseOver="makevisible(this,0)" onMouseOut="makevisible(this,1)"></a>
+	<!-- 上一页链接 --> 
+	<a title=上一页 href="popmenu.htm"> <img src="../images/prev.gif" style="filter:alpha(opacity=100)" onMouseOver="makevisible(this,0)" onMouseOut="makevisible(this,1)"></a>
+	<!-- 下一页链接 -->
+	<a title=下一页 href="company.htm"> <img src="../images/next.gif" style="filter:alpha(opacity=100)" onMouseOver="makevisible(this,0)" onMouseOut="makevisible(this,1)"></a> 
+	<!-- 下一级链接 -->
+	<a title=下一级 href="common.htm"> <img src="../images/down.gif" style="filter:alpha(opacity=100)" onMouseOver="makevisible(this,0)" onMouseOut="makevisible(this,1)"></a>
+</div>
+<h2>功能</h2>
+<p>翻页按钮用来控制页面的跳转，一般包括上一级、下一级、上一页和下一页。在联机帮助中提供翻页按钮，可以方便帮助使用者快速跳转页面进行查看，而不需要再去目录结构中单击选择。下面提供翻页按钮的制作方法。</p>
+<h2>操作步骤</h2>
+<ol>
+	<li>编写脚本函数，主要代码如下，具体可以参见<a class="caseindex" href="../script/page.js">page.js</a>；</li>
+	<br><i>function makevisible(cur,which){<br>
+	&nbsp;&nbsp;&nbsp;
+	if (which==1)<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	cur.filters.alpha.opacity=100;<br>
+	&nbsp;&nbsp;&nbsp;
+	else<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	cur.filters.alpha.opacity=50;<br>
+	}<br>
+	<br>
+	function MM_reloadPage(init) { <br>
+	&nbsp;&nbsp;&nbsp;
+	if (init==true) with (navigator)&nbsp;	{
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ((appName==&quot;Netscape&quot;)&amp;&amp;(parseInt(appVersion)==4)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; 
+	}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) <BR>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	location.reload();<br>}
+	</i>
+	<li>在需要使用翻页按钮的html文件的“&lt;head&gt;&lt;/head&gt;”中调用该脚本函数：<i>
+	<br>&lt;head&gt;<br>&lt;script language=&quot;JavaScript&quot; fptype=&quot;MM_reloadPage(true)&quot;src=&quot;../script/page.js&quot;&gt;&lt;/script&gt;<br>
+	&lt;/head&gt;</i></li>
+	<li>在body中加入以下代码即可：
+	<br><i>&lt;body&gt;<br>&lt;div id=&quot;PageBtn&quot;&gt;<br>
+		&lt;!-- 上一级链接 --&gt; <br>
+		&lt;a href=&quot;<font color="#800080">SysIntro.htm</font>&quot;&gt; <br>
+		&lt;img src=&quot;<font color="#800080">../images/up.gif</font>&quot;
+		style=&quot;filter:alpha(opacity=100)&quot; onMouseOver=&quot;makevisible(this,0)&quot; onMouseOut=&quot;makevisible(this,1)&quot;&gt;&lt;/a&gt;<br>
+		&lt;!-- 上一页链接 --&gt; <br>
+		&lt;a href=&quot;<font color="#800080">SysIntro.htm</font>&quot;&gt; &lt;img src=&quot;<font color="#800080">../images/prev.gif</font>&quot;
+		style=&quot;filter:alpha(opacity=100)&quot; onMouseOver=&quot;makevisible(this,0)&quot; onMouseOut=&quot;makevisible(this,1)&quot;&gt;&lt;/a&gt;<br>
+		&lt;!-- 下一页链接 --&gt;<br>
+		&lt;a href=&quot;<font color="#800080">support.htm</font>&quot;&gt; &lt;img src=&quot;<font color="#800080">../images/next.gif</font>&quot;
+		style=&quot;filter:alpha(opacity=100)&quot; onMouseOver=&quot;makevisible(this,0)&quot; onMouseOut=&quot;makevisible(this,1)&quot;&gt;&lt;/a&gt;
+		<br>
+		&lt;!-- 下一级链接 --&gt;<br>
+		&lt;a href=&quot;<font color="#800080">SS.htm</font>&quot;&gt; &lt;img src=&quot;<font color="#800080">../images/down.gif</font>&quot;
+		style=&quot;filter:alpha(opacity=100)&quot; onMouseOver=&quot;makevisible(this,0)&quot; onMouseOut=&quot;makevisible(this,1)&quot;&gt;&lt;/a&gt;<br>
+		&lt;/div&gt;<br>
+		&lt;/body&gt;</i></li>
+</ol>
+
+<h2>说明</h2>
+<ol>
+<li>根据需要选取翻页按钮，不一定四个按钮都得用上；</li>
+<li>根据需要修改按钮图片和按钮位置；</li>
+<li>代码中的紫色字体部分，表示自定义部分，即帮助制作者可以根据需要自行修改。</li>
+</ol>
+
+<h2>示例</h2>
+<p>看到本页面右上角的四个小图标了吗？他们就是翻页按钮，点点看吧~</p>
+
+</div>
+
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

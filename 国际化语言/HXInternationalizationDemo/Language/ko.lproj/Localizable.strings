@@ -1,0 +1,13 @@
+/* 
+  Hello.strings
+  HXInternationalizationDemo
+
+  Created by 黄轩 on 16/7/28.
+  Copyright © 2016年 黄轩. All rights reserved.
+*/
+
+"home" = "홈";
+"welcome" = "네, 세계!";
+"preference" = "선호";
+"cancel" = "취소";
+"search" = "검색";

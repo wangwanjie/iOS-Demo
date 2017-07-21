@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045385C71D634DA900C92919 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045385C51D634DA900C92919 /* CustomCell.m */; };
+		045385C81D634DA900C92919 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045385C61D634DA900C92919 /* CustomCell.xib */; };
+		04788EE21D633618005914E9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04788EE11D633618005914E9 /* UserModel.m */; };
+		04788EE51D6336AA005914E9 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04788EE41D6336AA005914E9 /* DatabaseManager.m */; };
+		0481E0B21D640EDA00D86EBC /* UpdatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0481E0B11D640EDA00D86EBC /* UpdatViewController.m */; };
+		049595D01D632C8D00014017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049595CF1D632C8D00014017 /* main.m */; };
+		049595D31D632C8D00014017 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049595D21D632C8D00014017 /* AppDelegate.m */; };
+		049595D61D632C8D00014017 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049595D51D632C8D00014017 /* ViewController.m */; };
+		049595D91D632C8D00014017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049595D71D632C8D00014017 /* Main.storyboard */; };
+		049595DB1D632C8D00014017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049595DA1D632C8D00014017 /* Assets.xcassets */; };
+		049595DE1D632C8D00014017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049595DC1D632C8D00014017 /* LaunchScreen.storyboard */; };
+		049595E91D632C8D00014017 /* SQLHomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049595E81D632C8D00014017 /* SQLHomeWorkTests.m */; };
+		049595F41D632C8D00014017 /* SQLHomeWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049595F31D632C8D00014017 /* SQLHomeWorkUITests.m */; };
+		049596021D6330F200014017 /* mydatabase3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 049596011D6330F200014017 /* mydatabase3.sqlite */; };
+		049596041D63310D00014017 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 049596031D63310D00014017 /* libsqlite3.0.tbd */; };
+		049596071D63326800014017 /* UserListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049596061D63326800014017 /* UserListTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049595E51D632C8D00014017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049595C31D632C8C00014017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049595CA1D632C8C00014017;
+			remoteInfo = SQLHomeWork;
+		};
+		049595F01D632C8D00014017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049595C31D632C8C00014017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049595CA1D632C8C00014017;
+			remoteInfo = SQLHomeWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045385C41D634DA900C92919 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		045385C51D634DA900C92919 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		045385C61D634DA900C92919 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		04788EE01D633618005914E9 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		04788EE11D633618005914E9 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		04788EE31D6336AA005914E9 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		04788EE41D6336AA005914E9 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		0481E0B01D640EDA00D86EBC /* UpdatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatViewController.h; sourceTree = "<group>"; };
+		0481E0B11D640EDA00D86EBC /* UpdatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatViewController.m; sourceTree = "<group>"; };
+		049595CB1D632C8D00014017 /* SQLHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049595CF1D632C8D00014017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		049595D11D632C8D00014017 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		049595D21D632C8D00014017 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		049595D41D632C8D00014017 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		049595D51D632C8D00014017 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		049595D81D632C8D00014017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049595DA1D632C8D00014017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049595DD1D632C8D00014017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049595DF1D632C8D00014017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049595E41D632C8D00014017 /* SQLHomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLHomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049595E81D632C8D00014017 /* SQLHomeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLHomeWorkTests.m; sourceTree = "<group>"; };
+		049595EA1D632C8D00014017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049595EF1D632C8D00014017 /* SQLHomeWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLHomeWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049595F31D632C8D00014017 /* SQLHomeWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLHomeWorkUITests.m; sourceTree = "<group>"; };
+		049595F51D632C8D00014017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049596011D6330F200014017 /* mydatabase3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydatabase3.sqlite; sourceTree = "<group>"; };
+		049596031D63310D00014017 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		049596051D63326800014017 /* UserListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListTableViewController.h; sourceTree = "<group>"; };
+		049596061D63326800014017 /* UserListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049595C81D632C8C00014017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049596041D63310D00014017 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595E11D632C8D00014017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595EC1D632C8D00014017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049595C21D632C8C00014017 = {
+			isa = PBXGroup;
+			children = (
+				049596031D63310D00014017 /* libsqlite3.0.tbd */,
+				049595CD1D632C8D00014017 /* SQLHomeWork */,
+				049595E71D632C8D00014017 /* SQLHomeWorkTests */,
+				049595F21D632C8D00014017 /* SQLHomeWorkUITests */,
+				049595CC1D632C8D00014017 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049595CC1D632C8D00014017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049595CB1D632C8D00014017 /* SQLHomeWork.app */,
+				049595E41D632C8D00014017 /* SQLHomeWorkTests.xctest */,
+				049595EF1D632C8D00014017 /* SQLHomeWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049595CD1D632C8D00014017 /* SQLHomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				049595D11D632C8D00014017 /* AppDelegate.h */,
+				049595D21D632C8D00014017 /* AppDelegate.m */,
+				049595D41D632C8D00014017 /* ViewController.h */,
+				049595D51D632C8D00014017 /* ViewController.m */,
+				049596051D63326800014017 /* UserListTableViewController.h */,
+				049596061D63326800014017 /* UserListTableViewController.m */,
+				04788EE01D633618005914E9 /* UserModel.h */,
+				045385C41D634DA900C92919 /* CustomCell.h */,
+				045385C51D634DA900C92919 /* CustomCell.m */,
+				0481E0B01D640EDA00D86EBC /* UpdatViewController.h */,
+				0481E0B11D640EDA00D86EBC /* UpdatViewController.m */,
+				045385C61D634DA900C92919 /* CustomCell.xib */,
+				04788EE31D6336AA005914E9 /* DatabaseManager.h */,
+				04788EE41D6336AA005914E9 /* DatabaseManager.m */,
+				04788EE11D633618005914E9 /* UserModel.m */,
+				049595D71D632C8D00014017 /* Main.storyboard */,
+				049596011D6330F200014017 /* mydatabase3.sqlite */,
+				049595DA1D632C8D00014017 /* Assets.xcassets */,
+				049595DC1D632C8D00014017 /* LaunchScreen.storyboard */,
+				049595DF1D632C8D00014017 /* Info.plist */,
+				049595CE1D632C8D00014017 /* Supporting Files */,
+			);
+			path = SQLHomeWork;
+			sourceTree = "<group>";
+		};
+		049595CE1D632C8D00014017 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				049595CF1D632C8D00014017 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		049595E71D632C8D00014017 /* SQLHomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				049595E81D632C8D00014017 /* SQLHomeWorkTests.m */,
+				049595EA1D632C8D00014017 /* Info.plist */,
+			);
+			path = SQLHomeWorkTests;
+			sourceTree = "<group>";
+		};
+		049595F21D632C8D00014017 /* SQLHomeWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				049595F31D632C8D00014017 /* SQLHomeWorkUITests.m */,
+				049595F51D632C8D00014017 /* Info.plist */,
+			);
+			path = SQLHomeWorkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049595CA1D632C8C00014017 /* SQLHomeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049595F81D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWork" */;
+			buildPhases = (
+				049595C71D632C8C00014017 /* Sources */,
+				049595C81D632C8C00014017 /* Frameworks */,
+				049595C91D632C8C00014017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLHomeWork;
+			productName = SQLHomeWork;
+			productReference = 049595CB1D632C8D00014017 /* SQLHomeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		049595E31D632C8D00014017 /* SQLHomeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049595FB1D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWorkTests" */;
+			buildPhases = (
+				049595E01D632C8D00014017 /* Sources */,
+				049595E11D632C8D00014017 /* Frameworks */,
+				049595E21D632C8D00014017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049595E61D632C8D00014017 /* PBXTargetDependency */,
+			);
+			name = SQLHomeWorkTests;
+			productName = SQLHomeWorkTests;
+			productReference = 049595E41D632C8D00014017 /* SQLHomeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		049595EE1D632C8D00014017 /* SQLHomeWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049595FE1D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWorkUITests" */;
+			buildPhases = (
+				049595EB1D632C8D00014017 /* Sources */,
+				049595EC1D632C8D00014017 /* Frameworks */,
+				049595ED1D632C8D00014017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049595F11D632C8D00014017 /* PBXTargetDependency */,
+			);
+			name = SQLHomeWorkUITests;
+			productName = SQLHomeWorkUITests;
+			productReference = 049595EF1D632C8D00014017 /* SQLHomeWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049595C31D632C8C00014017 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = huang;
+				TargetAttributes = {
+					049595CA1D632C8C00014017 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					049595E31D632C8D00014017 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 049595CA1D632C8C00014017;
+					};
+					049595EE1D632C8D00014017 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 049595CA1D632C8C00014017;
+					};
+				};
+			};
+			buildConfigurationList = 049595C61D632C8C00014017 /* Build configuration list for PBXProject "SQLHomeWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049595C21D632C8C00014017;
+			productRefGroup = 049595CC1D632C8D00014017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049595CA1D632C8C00014017 /* SQLHomeWork */,
+				049595E31D632C8D00014017 /* SQLHomeWorkTests */,
+				049595EE1D632C8D00014017 /* SQLHomeWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049595C91D632C8C00014017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045385C81D634DA900C92919 /* CustomCell.xib in Resources */,
+				049596021D6330F200014017 /* mydatabase3.sqlite in Resources */,
+				049595DE1D632C8D00014017 /* LaunchScreen.storyboard in Resources */,
+				049595DB1D632C8D00014017 /* Assets.xcassets in Resources */,
+				049595D91D632C8D00014017 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595E21D632C8D00014017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595ED1D632C8D00014017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049595C71D632C8C00014017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049595D61D632C8D00014017 /* ViewController.m in Sources */,
+				049595D31D632C8D00014017 /* AppDelegate.m in Sources */,
+				049596071D63326800014017 /* UserListTableViewController.m in Sources */,
+				049595D01D632C8D00014017 /* main.m in Sources */,
+				045385C71D634DA900C92919 /* CustomCell.m in Sources */,
+				0481E0B21D640EDA00D86EBC /* UpdatViewController.m in Sources */,
+				04788EE51D6336AA005914E9 /* DatabaseManager.m in Sources */,
+				04788EE21D633618005914E9 /* UserModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595E01D632C8D00014017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049595E91D632C8D00014017 /* SQLHomeWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049595EB1D632C8D00014017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049595F41D632C8D00014017 /* SQLHomeWorkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049595E61D632C8D00014017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049595CA1D632C8C00014017 /* SQLHomeWork */;
+			targetProxy = 049595E51D632C8D00014017 /* PBXContainerItemProxy */;
+		};
+		049595F11D632C8D00014017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049595CA1D632C8C00014017 /* SQLHomeWork */;
+			targetProxy = 049595F01D632C8D00014017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		049595D71D632C8D00014017 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049595D81D632C8D00014017 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		049595DC1D632C8D00014017 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049595DD1D632C8D00014017 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		049595F61D632C8D00014017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		049595F71D632C8D00014017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049595F91D632C8D00014017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SQLHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		049595FA1D632C8D00014017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SQLHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		049595FC1D632C8D00014017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SQLHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLHomeWork.app/SQLHomeWork";
+			};
+			name = Debug;
+		};
+		049595FD1D632C8D00014017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SQLHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLHomeWork.app/SQLHomeWork";
+			};
+			name = Release;
+		};
+		049595FF1D632C8D00014017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SQLHomeWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SQLHomeWork;
+			};
+			name = Debug;
+		};
+		049596001D632C8D00014017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SQLHomeWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuxianedu.SQLHomeWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SQLHomeWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049595C61D632C8C00014017 /* Build configuration list for PBXProject "SQLHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049595F61D632C8D00014017 /* Debug */,
+				049595F71D632C8D00014017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049595F81D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049595F91D632C8D00014017 /* Debug */,
+				049595FA1D632C8D00014017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049595FB1D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049595FC1D632C8D00014017 /* Debug */,
+				049595FD1D632C8D00014017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049595FE1D632C8D00014017 /* Build configuration list for PBXNativeTarget "SQLHomeWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049595FF1D632C8D00014017 /* Debug */,
+				049596001D632C8D00014017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 049595C31D632C8C00014017 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>显示隐藏的使用</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<LINK rel=stylesheet type="text/css" href="../help.css">
+<script language=javascript fptype="initial()" src="../script/display.js"></script>
+</HEAD>
+
+<BODY onload="initial(divxj)">
+<!------------------------------head头部-------------------------------->
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="head">帮助模板</td>
+		<td id="headbg"></td>
+	</tr>
+</table>
+
+<!------------------------------content部分------------------------------------>
+<div id="Content">
+<h1>显示隐藏的使用</h1>
+<h2>功能</h2>
+<p>由于页面空间的不足，或者内容的重要级别较低，可以将该内容隐藏起来，当需要显示的时候再显示。</p>
+<h2>操作步骤</h2>
+<ol>
+	<li>编写脚本函数，主要代码如下，具体可以参见<a class="caseindex" href="../script/display.js">display.js</a>；</li>
+	<br><i>function initial() {
+	<br>&nbsp;&nbsp;&nbsp; var a;<br>
+		&nbsp;&nbsp;&nbsp; var i=initial.arguments.length;<br>
+		&nbsp;&nbsp;&nbsp; while(i&gt;0) {<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a=initial.arguments[(i--)-1];<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a.style.display==&quot;none&quot;)<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		a.style.display=&quot;block&quot;;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			a.style.display=&quot;none&quot;;<br>
+		&nbsp;&nbsp;&nbsp; }<br>
+			}<br>
+			function IsBlock(object1,object2) {<br>
+		&nbsp;&nbsp;&nbsp; if(object2.style.display==&quot;block&quot;) {<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object1.src=&quot;<font color="#800080">../images/close.gif</font>&quot;;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object2.style.display=&quot;none&quot;;<br>
+		&nbsp;&nbsp;&nbsp;}<br> else{<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object1.src=&quot;<font color="#800080">../images/open.gif</font>&quot;;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object2.style.display=&quot;block&quot;;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>	}
+	</i>
+	<li>在需要使用显示隐藏的html文件的“&lt;head&gt;&lt;/head&gt;”中调用该脚本函数：
+	<br><i>&lt;head&gt;<br>&lt;script language=javascript fptype=&quot;initial()&quot; src=&quot;../script/display.js&quot;&gt;&lt;/script&gt;<br>
+		&lt;/head&gt;</i></li>
+	<li>在html文件的body中使用显示隐藏功能：<br><i>&lt;body&nbsp; onload=&quot;initial(<font color="#800080">divxj</font>)&quot;&gt;<br>&lt;p&gt;&lt;IMG id=<font color="#800080">imgxj</font> src=&quot;<font color="#800080">../images/close.gif</font>&quot; width=&quot;14&quot; height=&quot;10&quot;&gt;<font color="#999999">&lt;IMG 
+		src=&quot;../images/open.gif&quot; border=0 width=0 height=0 style=&quot;display:none&quot;&gt;</font><br>
+		&lt;a title=<font color="#800080">显示隐藏</font> onmouseover=&quot;this.style.color='<font color="#800080">black</font>'&quot; onmouseout=&quot;this.style.color='<font color="#800080">blue</font>'&quot; 
+	href=&quot;javascript:IsBlock(imgxj,divxj)&quot;&gt;&lt;b&gt;显示隐藏&lt;/b&gt;&lt;/a&gt; 
+	&lt;/p&gt;<br>
+		&lt;ul id=&quot;<font color="#800080">divxj</font>&quot;&gt;<br>
+		&nbsp;&nbsp;&nbsp; &lt;li&gt;显示&lt;/li&gt;<br>
+		&nbsp;&nbsp;&nbsp; &lt;li&gt;隐藏&lt;/li&gt;<br>
+		&lt;/ul&gt;<br>
+		&lt;/body&gt;</i></li>
+</ol>
+<h2>说明</h2>
+<ol>
+<li>代码中的紫色字体部分，表示自定义部分，即帮助制作者可以根据需要自行修改；</li>
+<li>代码中的灰色字体部分，用于解决html页面调用了javascript 函数文件，而该js文件中引用了图片，但是使用Html Help Workshop编译成.chm文件后，图片不能显示的问题。</li>
+</ol>
+
+<h2>示例</h2>
+<p><IMG id=imgxj src="../images/close.gif" width="14" height="10"><IMG src="../images/open.gif" border=0 width=0 height=0 style="display:none">
+	<a class="pop" title=显示隐藏  onmouseover="this.style.color='black'"  onmouseout="this.style.color='blue'" href="javascript:IsBlock(imgxj,divxj)"><b>显示隐藏</b></a></p>
+	<ul id="divxj" style="padding-left:1.5em;">	
+		<li>显示</li>
+		<li>隐藏</li>
+	</ul>
+</div>
+
+<!------------------------------foot底部------------------------------------>
+<div id="foot">版权所有 &copy北京久其软件股份有限公司 保留所有权利</div>
+
+</BODY>
+</HTML>

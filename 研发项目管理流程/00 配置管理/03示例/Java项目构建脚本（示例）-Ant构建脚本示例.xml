@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<project name="ezReport" default="release" >
+
+	<property file = "path.properties" />
+
+	<property name="log_base" value="${code_base}\logs"/>
+
+	<property name="servlet_jar" value="${engine_base}\jar\servlet.jar"/>
+	
+	<property name="dcc" value="${delphi_home}\bin\dcc32.exe"/>
+	
+	<property name = "gridpath" value = "${jqgrid.base}\Common;${jqgrid.base}\Grid\Ctrl;${jqgrid.base}\Grid\Editor;${jqgrid.base}\Grid\Print;${jqgrid.base}\Print\Designer;${jqgrid.base}\Print\Dock;${jqgrid.base}\Print\Grid;${jqgrid.base}\Print\NodeList;${jqgrid.base}\Print\NodeList\HashTable;${jqgrid.base}\Print\PicEditor;${jqgrid.base}\Print\ReportCtrl;${jqgrid.base}\Print\ReportEditor;${jqgrid.base}\Print\ScrollBox;${jqgrid.base}\Grid\WebAccess;${jqgrid.base}\dunit-9.2.1\src;${jqgrid.base}\ZTV6\source;${jqgrid.base}\Rx\Units\;${jqgrid.base}\Rx\Dcus\;${jqgrid.base}\Grid\;${jqgrid.base}\Grid\XlsRW\" />
+	<property name = "delphi.common" value = ";${delphilib.srcbase}\Syntax\D2007\;${delphilib.srcbase}\Algorithms\;${delphilib.srcbase}\Codec\;${delphilib.srcbase}\FileFormats\;${delphilib.srcbase}\GridCtrl\;${delphilib.srcbase}\HashUtils\;${delphilib.srcbase}\Help\;${delphilib.srcbase}\Log4D\;${delphilib.srcbase}\Regex\;${delphilib.srcbase}\ThirdParty\FastMM\;${delphilib.srcbase}\ThirdParty\cnPack\common;${delphilib.srcbase}\ThirdParty\cnPack\DbReport;${delphilib.srcbase}\ThirdParty\cnPack\Graphics;${delphilib.srcbase}\ThirdParty\cnPack\lang\1028\;${delphilib.srcbase}\ThirdParty\cnPack\lang\1033;${delphilib.srcbase}\ThirdParty\cnPack\Multilang;${delphilib.srcbase}\ThirdParty\cnPack\NetComm;${delphilib.srcbase}\ThirdParty\cnPack\NonVisual;${delphilib.srcbase}\ThirdParty\cnPack\ObjRep;${delphilib.srcbase}\ThirdParty\cnPack\Skin;${delphilib.srcbase}\ThirdParty\SAX for Pascal\Source\;${delphilib.srcbase}\ThirdParty\SAX for Pascal\Vendors\Keith Wood\;${delphilib.srcbase}\ThirdParty\SAX for Pascal\Vendors\MSXML\;${delphilib.srcbase}\ThirdParty\TDBF\;${delphilib.srcbase}\ThirdParty\ZTV6\;${delphilib.srcbase}\UI\App\;${delphilib.srcbase}\UI\CommonDialogs\;${delphilib.srcbase}\UI\CommonDialogs\Progress\;${delphilib.srcbase}\UI\Ctrls\;${delphilib.srcbase}\UI\DataTrans\;${delphilib.srcbase}\UI\Dock\;${delphilib.srcbase}\Utils\;${delphilib.srcbase}\Utils\Lists\;${delphilib.srcbase}\Utils\Stream\;${delphilib.srcbase}\ThirdParty\MaxCtrls;${delphilib.srcbase}\ThirdParty\gaSQLParser;${delphilib.srcbase}\SQLUtils;${delphilib.srcbase}\Syntax;${delphilib.srcbase}\DBase;${delphilib.srcbase}\DBUtils;${delphilib.srcbase}\SUNLib;${delphilib.srcbase}\ThirdParty\SynEdit;${delphilib.srcbase}\Delphi\ToolsAPI.2007\"/>
+	<property name="delphi_lib" value="&quot;${delphi_home}\Lib;${delphi_home}\Ocx\Servers;${designer_base}\Resource;${delphi_RX};${gridpath};${delphi.common};&quot;" />
+	<property name="delphi.opt" value="-$D-,L+,O+"/>
+	
+	<property name="designer_dpr" value="${designer_base}\ezReportDesigner.dpr"/>
+	<property name="designer_out" value="${designer_base}\Out"/>
+	<property name="designer_dcu" value="${designer_base}\dcus"/>
+	<property name="designer.exe" value="${designer_out}\ezReportDesigner.exe"/>
+	<!--property name="designer_log" value="${log_base}\designer.log"/-->
+	
+	<property name="dsgnocx_dpr" value="${dsgnocx_base}\JQezReportDesignerXCtrl.dpr"/>
+	<property name="dsgnocx_out" value="${dsgnocx_base}"/>
+	<property name="dsgnocx_dcu" value="${designer_dcu}"/>
+	<property name="design.ocx" value="${dsgnocx_base}\JQezReportDesignerXCtrl.ocx"/>
+	<!--property name="dsgnocx_log" value="${log_base}\designer_ocx.log"/-->
+	
+	<property name="grid.base" value="${gridocx_base}"/>
+	<property name="grid.dpr" value="${grid.base}\JQGrid.dpr"/>
+	<property name="grid.out" value="${grid.base}"/>
+	<property name="grid.dcu" value="${designer_dcu}"/>
+	<property name="grid.ocx" value="${grid.out}\JQGrid.ocx"/>
+	<property name="JQGrid.OCX" value="${grid.ocx}"/>
+	
+	<property name="print.base" value="${printocx_base}"/>
+	<property name="print.dpr" value="${print.base}\JQezPrinter.dpr"/>
+	<property name="print.out" value="${print.base}"/>
+	<property name="print.dcu" value="${designer_dcu}"/>
+	<property name="print.ocx" value="${print.out}\JQezPrinter.ocx"/>
+	<!--property name="print.log" value="${log_base}\print_ocx.log"/-->
+	
+	<property name="dsgnclt_base" value="${dsgnocx_base}\DesignClient"/>
+	<property name="dsgnclt_dpr" value="${dsgnclt_base}\DesignClient.dpr"/>
+	<property name="dsgnclt_out" value="${dsgnclt_base}"/>
+	<property name="dsgnclt_dcu" value="${dsgnclt_base}\Dcus"/>
+	<property name="dsgnclt_log" value="${log_base}\designclient.log"/>
+	
+	<property name="engine.version" value="3.0.0"/>
+	
+	<property name="engine_src" value="${engine_base}\src"/>
+	<property name="engine_dest" value="${engine_base}\classes"/>
+	<property name="engine_path" value="${engine_base}\jar\js.jar;${engine_base}\jar\jqlib-1.0.1.jar;${engine_base}\jar\jxl.jar;${engine_base}\jar\bcprov-jdk14-131.jar;${servlet_jar};${engine_base}\jar\poi-3.0.1.jar;${engine_base}\jar\JQWebTree2.0.jar"/>
+	<property name="engine_preview" value="${designer_out}\ezPreview.jar"/>
+	<property name="engine.jar" value="${webdemo_base}\web\WEB-INF\lib\ezReport-${engine.version}.jar"/>
+	<property name="engine_jar" value="${engine.jar}"/>
+	<property name="engine.lib" value="${engine_base}\jar"/>
+	
+	<property name="webdemo_web" value="${webdemo_base}\web"/>
+	<property name="webdemo_src" value="${webdemo_base}\src"/>
+	<property name="webdemo_dest" value="${webdemo_web}\WEB-INF\classes"/>
+	<property name="webdemo_lib" value="${webdemo_web}\WEB-INF\lib"/>
+	<property name="webdemo_war" value="${webdemo_base}\ezreport.war"/>
+	<property name="webdemo_path" value="${engine_jar};${webdemo_lib}\jqlib-1.0.1.jar;${servlet_jar};${webdemo_lib}\jfreechart.jar;${webdemo_lib}\JQWebTree2.0.jar;${webdemo_lib}\jdom.jar;${webdemo_lib}\jcommon.jar;${webdemo_lib}\ojdbc14.jar;${webdemo_lib}\JQWebCom.jar;${webdemo_lib}\jxl.jar;${webdemo_lib}\poi-3.0.1.jar"/>
+	
+	<!-- start by jiazenghui-->
+	<property name="reportserver_db" value="${reportserver_base}\db"/>
+	<property name="reportserver_web" value="${reportserver_base}\web"/>
+	<property name="reportserver_src" value="${reportserver_base}\src"/>
+	<property name="reportserver_dest" value="${reportserver_web}\WEB-INF\classes"/>
+	<property name="reportserver_lib" value="${reportserver_web}\WEB-INF\lib"/>
+	<property name="reportserver_war" value="${reportserver_base}\reportserver.war"/>
+	<property name="reportserver_path" value="${engine_jar};${reportserver_lib}\jqlib-1.0.1.jar;${reportserver_lib}\bcprov-jdk14-131.jar;${servlet_jar};${reportserver_lib}\commons-fileupload-1.2.1.jar;${reportserver_lib}\commons-io-1.4.jar;${reportserver_lib}\db2java.jar;${reportserver_lib}\derby.jar;${reportserver_lib}\jcommon.jar;${reportserver_lib}\jdom.jar;${reportserver_lib}\JQWebTree2.0.jar;${reportserver_lib}\js.jar;${reportserver_lib}\msbase.jar;${reportserver_lib}\mssqlserver.jar;${reportserver_lib}\msutil.jar;${reportserver_lib}\ojdbc14.jar;${reportserver_lib}\poi-3.0.1.jar;${reportserver_lib}\sqljdbc.jar;${reportserver_lib}\xerces.jar"/>
+	<!-- end by jiazenghui-->
+
+	<property name="build.debug" value="on"/>
+	<property name="build.debuglevel" value="lines,source"/>
+
+	<target name="clean" description="clean up all old files" >
+		<delete file="${designer_out}\ezReportDesigner.exe"/>
+		<delete dir="${designer_dcu}"/>
+		<delete file="${dsgnocx_out}\JQezReportDesignerXCtrl.ocx"/>
+		<delete file="${print.out}\JQezPrinter.ocx"/>
+		<delete file="${grid.out}\JQGrid.ocx"/>
+
+		<delete dir = "${designer_base}" />
+		<delete dir = "${engine_base}" />
+		<delete dir = "${webdemo_base}" />
+		<delete dir = "${reportserver_base}" />
+		
+		<delete dir="${engine_dest}"/>
+		<delete file="${engine_preview}"/>
+		<delete file="${engine_jar}"/>
+		
+		<delete dir="${webdemo_dest}"/>
+		<delete file="${webdemo_war}"/>
+		<delete file = "${webdemo_lib}\jqlib-1.0.1.jar" />
+		
+		<delete dir="${reportserver_dest}"/>
+		<delete file="${reportserver_war}"/>
+
+		<delete dir = "${jqlib.base}"/>
+		<mkdir dir = "${jqlib.base}"/>
+		<mkdir dir ="%{jqlib.base}\classes"/>
+
+		<delete dir = "${delphilib.srcbase}"/>
+		<mkdir dir = "${delphilib.srcbase}"/>		
+	</target>
+	
+	<target name = "getsource" description = "get source from vss and StarTeam" depends="clean">
+
+		<!--mkdir dir = "${sql.dir}" /-->
+		<stcheckout URL = "${st.servername}:${st.serverport}/Moonlight（久其ezReport报表组件V3.0）/Moonlight（久其ezReport报表组件V3.0）"
+				username="${st.username}" 
+				password="${st.password}"
+				rootstarteamfolder = "06源代码"
+				rootlocalfolder = "${code_base}"
+		/>
+		
+		<vssget vsspath = "${modules.vss.path}\DelphiLib\Src" ssdir="${vss.ssdir}" serverpath="${modules.vss.svrdir}" quiet="false" localpath="${delphilib.srcbase}"  recursive="true" login="${vss.name}, ${vss.psd}" />
+		<vssget vsspath = "${modules.vss.path}\jqLib" ssdir="${vss.ssdir}" serverpath="${modules.vss.svrdir}" quiet="false" localpath="${jqlib.base}"  recursive="true" login="${vss.name}, ${vss.psd}" />
+	</target>
+
+	<target name="ezDesigner" description="compile ezDesigner project">
+		<echo message = "${designer_dpr}"/>
+
+		<mkdir dir="${designer_out}"/>
+		<mkdir dir="${designer_dcu}"/>
+
+		<exec dir="${designer_base}" executable="${dcc}" os="Windows 2003 Server" failonerror="true">
+			<arg line=" -B -Q ${designer_dpr} -N${designer_dcu} -E${designer_out} -U${delphi_lib} -I${delphi.inc} -DRelease"/>
+		</exec>
+		
+		<!--exec dir="${designer_base}" executable="${aspack}" os="Windows 2003 Server">
+			<arg line=" ${designer.exe} /Q"/>
+		</exec-->
+	</target>
+	
+	<!--target name="ezDesigner.ocx" description="compile ezDesigner ocx project" depends="ezDesigner">
+		<exec dir="${dsgnocx_base}" executable="${dcc}" os="Windows 2003 Server" failonerror="true">
+			<arg line=" -B -Q ${dsgnocx_dpr} -N${dsgnocx_dcu} -E${dsgnocx_out} -U${delphi_lib} -I${delphi.inc}"/>
+		</exec>
+		
+		<exec dir="${designer_base}" executable="${aspack}" os="Windows 2003 Server">
+			<arg line=" ${design.ocx} /Q"/>
+		</exec>
+	</target-->
+	
+	<!--target name="grid.ocx" description="compile JQGrid ocx project">
+		<exec dir="${grid.base}" executable="${dcc}" os="Windows 2003 Server" failonerror="true">
+			<arg line=" -B -Q ${grid.dpr} -N${grid.dcu} -E${grid.out} -U${delphi_lib} -I${delphi.inc} -DDebugOCX ${delphi.opt}"/>
+		</exec>
+	</target-->
+	
+	<!--target name="ezPrint.ocx" description="compile ezPrint ocx project">
+		<exec dir="${print.base}" executable="${dcc}" os="Windows 2003 Server" failonerror="true">
+			<arg line=" -B -Q ${print.dpr} -N${print.dcu} -E${print.out} -U${delphi_lib} -I${delphi.inc}"/>
+		</exec>
+		
+		<exec dir="${print.base}" executable="${aspack}" os="Windows 2003 Server">
+			<arg line=" ${print.ocx} /Q"/>
+		</exec>
+	</target-->
+	
+	<!--target name="ezDesignerClient" description="compile ezDesignerClient project" depends="ezDesigner.ocx,grid.ocx">
+		<exec dir="${dsgnclt_base}" executable="${dcc}" os="Windows 2003 Server" failonerror="true">
+			<arg line=" -B -Q ${dsgnclt_dpr} -N${dsgnclt_dcu} -E${dsgnclt_out} -U${delphi_lib} -I${delphi.inc}"/>
+		</exec>
+	</target-->
+
+	<target name = "jqlib" description = "compile jqlib sources" >
+		<ant dir = "${jqlib.base}" antfile = "${jqlib.base}\build.xml" target = "release2engine" >
+			<property name = "engine.libdir" value = "${engine_base}\jar"/>
+			<property name = "engine.dir" value = "true"/>
+			<property name = "use.test" value = "true" />
+			<property name = "jqlib.junit" value = "${jqlib.junit}" />
+		</ant>		
+	</target>
+
+	<target name="engine" description="compile ezReport Engine sources">
+		<mkdir dir="${engine_dest}"/>
+		<javac srcdir="${engine_src}" destdir="${engine_dest}" classpath="${engine_path}" 
+			debug="${build.debug}" debuglevel="${build.debuglevel}"/>
+		<ant dir="${engine_base}" antfile="${engine_base}\ezPreview.xml">
+			<property name = "fjepPath" value ="${fatjar.base}" />
+			<property name="preview_jar" value="${engine_preview}"/>
+			<property name = "engine.base" value = "${engine_base}" />
+		</ant>
+		<ant dir="${engine_base}" antfile="${engine_base}\ezReport.xml">
+			<property name = "jqlib.base" value = "${jqlib.base}" />
+			<property name = "web.base" value = "${webdemo_base}"/>
+			<property name = "ezReport.base" value = "${engine_base}"/>
+			<property name = "ezReport.dest" value = "${webdemo_lib}" />
+			<property name="ezreport_jar" value="${engine_jar}"/>
+		</ant>
+		<jar destfile="${engine.jar}" basedir="${engine_dest}"/>
+	</target>
+	
+	
+	<target name="enginedoc" description="generate engine document">
+		<mkdir dir = "${engine_base}\doc"/>
+		<ant dir="${engine_base}" antfile="${engine_base}\javadoc.xml">
+			<property name="doc.base" value="${engine_base}"/>
+		</ant>
+	</target>
+	
+	<target name="webdemo" description="compile ezReport WebDemo project" depends="engine">
+		<mkdir dir="${webdemo_dest}"/>
+		<javac srcdir="${webdemo_src}" destdir="${webdemo_dest}" classpath="${webdemo_path}"
+			debug="${build.debug}" debuglevel="${build.debuglevel}"/>
+		<ant dir="${webdemo_base}" antfile="${webdemo_base}\export.xml">
+			<property name="ezreport_war" value="${webdemo_war}"/>
+			<property name="web_dir" value="${webdemo_web}"/>
+		</ant>
+		<!--
+			<copy file="${print.out}\JQezPrinter.ocx" todir="${webdemo_web}\ocx"/>
+			<copy file="${design.ocx}" todir="${webdemo_web}\wizard\resource\ocx"/>
+		-->
+	</target>
+	
+	<!-- start by jiazenghui -->
+	<target name="reportserver" description="compile ezReport ReportServer project" depends="engine">
+		<mkdir dir="${reportserver_dest}"/>
+		<javac srcdir="${reportserver_src}" destdir="${reportserver_dest}" classpath="${reportserver_path}"
+			debug="${build.debug}" debuglevel="${build.debuglevel}"/>
+		<ant dir="${reportserver_base}" antfile="${reportserver_base}\export.xml">
+			<property name="reportserver_war" value="${reportserver_war}"/>
+			<property name="web_dir" value="${reportserver_web}"/>
+		</ant>
+		<!--
+			<copy file="${print.out}\JQezPrinter.ocx" todir="${reportserver_web}\ocx"/>
+			<copy file="${design.ocx}" todir="${reportserver_web}\wizard\resource\ocx"/>
+		-->
+	</target>
+	<!-- end by jiazenghui -->
+
+	<!--target name="build" depends=" ezDesigner, ezDesignerClient, jqlib, engine, enginedoc, webdemo, reportserver"/-->
+	<target name="build" depends=" ezDesigner, jqlib, engine, enginedoc, webdemo, reportserver"/>
+	<target name="release" depends="clean, getsource, build">
+		<mkdir dir = "${log_base}" />
+		<tstamp prefix="release">
+			<format property="dest" pattern="yyyy-MM-dd(HH-mm-ss)"/>
+		</tstamp>
+		<property name="release.out" value="${release.root}\${release.dest}"/>
+
+		<echo message="release files to: ${release.out}"/>
+	
+		<property name="release.design" value="${release.out}\design"/>
+		<mkdir dir="${release.design}"/>
+		<copy file="${designer_out}\ezReportDesigner.exe" todir="${release.design}"/>
+		<copy file="${engine.lib}\bcprov-jdk14-131.jar" todir="${release.design}"/>
+		<copy file="${engine_preview}" todir="${release.design}"/>
+<!--		
+		<property name="release.client" value="${release.out}\client"/>
+		<mkdir dir="${release.client}"/>
+		<copy file="${dsgnclt_out}\DesignClient.exe" todir="${release.client}"/>
+		<copy file="${grid.ocx}" todir="${release.client}"/>
+		<copy file="${dsgnocx_out}\JQezReportDesignerXCtrl.ocx" todir="${release.client}"/>
+		<copy file="${print.out}\JQezPrinter.ocx" todir="${release.client}"/>
+-->
+		<property name="release.server" value="${release.out}\server"/>
+		<mkdir dir="${release.server}"/>
+		<copy file="${webdemo_war}" todir="${release.server}"/>
+		<zip destfile="${release.server}\webdemo_src.zip">
+			<zipfileset dir="${webdemo_src}" prefix="src"/>
+			<zipfileset dir="${webdemo_web}" prefix="web"/>
+		</zip>
+		<zip destfile="${release.server}\web_js.zip">
+			<zipfileset dir="${webdemo_web}\js" excludes="vssver.scc"/>
+		</zip>
+		
+		<!-- start by jiazenghui -->
+		<property name="release.server_db" value="${release.server}\db"/>
+		<mkdir dir="${release.server_db}"/>
+		<copydir src="${reportserver_db}" dest="${release.server_db}" />
+		<copy file="${reportserver_war}" todir="${release.server}"/>
+		<zip destfile="${release.server}\reportserver_src.zip">
+			<zipfileset dir="${reportserver_src}" prefix="src"/>
+			<zipfileset dir="${reportserver_web}" prefix="web"/>
+		</zip>
+		<!-- end by jiazenghui -->
+
+		<property name="release.jars" value="${release.out}\jars"/>
+		<mkdir dir="${release.jars}"/>
+		<copy file="${engine.jar}" todir="${release.jars}"/>
+		<copy file="${engine.lib}\bcprov-jdk14-131.jar" todir="${release.jars}"/>
+		<zip destfile="${release.jars}\ezReport-${engine.version}-doc.zip" basedir="${engine_base}\doc"/>
+		<copy file="${engine.lib}\jqlib-1.0.1.jar" todir="${release.jars}"/>
+		<copy file="${engine.lib}\jqlib-1.0.1-doc.zip" todir="${release.jars}"/>
+		<copy file="${engine.lib}\poi-3.0.1.jar" todir="${release.jars}"/>
+		<copy file="${engine.lib}\js.jar" todir = "${release.jars}"/>
+
+		<property name="release.sqls" value="${release.out}\sqls"/>
+		<mkdir dir="${release.sqls}"/>
+		<copy todir="${release.sqls}">
+			<fileset dir="${sql.dir}">
+				<exclude name="**/vssver.scc"/>
+			</fileset>
+		</copy>
+
+		<property name="release.updatelist" value="${release.out}\更新说明.txt"/>
+		<echo message = "${release.updatelist}"/>
+		<exec dir="${release.out}" executable="${update.maker}" os="Windows 2003 Server">
+			<arg line=" ${release.updatelist}"/>
+		</exec>
+	</target>
+	<target name = "main" depends = "clean, build" />
+</project>

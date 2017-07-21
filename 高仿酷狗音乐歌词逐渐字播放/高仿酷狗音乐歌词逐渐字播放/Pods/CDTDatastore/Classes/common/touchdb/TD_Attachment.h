@@ -1,0 +1,41 @@
+//
+//  TD_Attachment.h
+//  TouchDB
+//
+//  Created by Jens Alfke on 4/3/12.
+//  Copyright (c) 2012 Couchbase, Inc. All rights reserved.
+//
+
+#import "TD_Database+Attachments.h"
+#import "TDBlobStore.h"
+
+/** A simple container for attachment metadata. */
+@interface TD_Attachment : NSObject {
+   @private
+    NSString* _name;
+    NSString* _contentType;
+   @public
+    // Yes, these are public. They're simple scalar values so it's not really worth
+    // creating accessor methods for them all.
+    TDBlobKey blobKey;
+    UInt64 length;
+    UInt64 encodedLength;
+    TDAttachmentEncoding encoding;
+    unsigned revpos;
+}
+
+- (id)initWithName:(NSString*)name contentType:(NSString*)contentType;
+
+@property (readonly, nonatomic) NSString* name;
+@property (readonly, nonatomic) NSString* contentType;
+
+@property (readonly) bool isValid;
+
+@end
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com

@@ -1,0 +1,201 @@
+/* CSS Document*/ 
+
+/* 定义body和table样式 */
+body,table {
+    font-family:verdana,tahoma,arial,宋体;
+    font-size:12px;
+   	color:#000000;
+    text-decoration:none;
+    margin:0px;
+}
+
+/* 定义顶部左侧样式 */
+#head {
+	background-color:#005B7F;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	padding:8px 25px 3px 20px;
+	white-space:nowrap;
+}
+
+/* 定义顶部右侧样式 */
+#headbg {
+	background-color:#A4CBDB;
+	width:100%;
+}
+
+/* 定义底部样式 */
+#foot {
+	text-align:center;
+	color:#999999;
+	font-size:10px;
+	padding:0px 10px 0px 10px;
+	position:relative;
+	border-top:1px solid #CCCCCC;
+	margin-top: 50px;
+	height:30px;
+}
+
+/* 定义content样式 */
+#content {
+	margin:0px 20px 0px 20px;
+	line-height:22px;
+}
+
+/* 定义content中的段落样式 */
+#content p {
+	line-height:20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* 定义标题样式 */
+h1 {
+	font-size: 15px; 
+	margin: 40px 0px 20px 0px;	
+	color: #000080;
+	border-bottom: 1px solid #99999999;
+}
+
+h2 {
+	font-size: 12px;
+	margin-top: 1.2em; 
+	margin-bottom: .5em; 
+	font-weight: bold;
+}
+h3 {
+    font-size: 12px; 
+	margin-top: 1.2em; 
+	font-weight: bold;
+}
+h4 {
+	font-size: 12px; 
+	margin-top: 0.5em; 
+	font-weight: bold;
+}
+
+/* 定义列表样式，该样式用于主题链接 */
+dt {
+	font-weight: bold;
+	margin-bottom: 2em; 
+}
+dd {
+	margin-left: 3em;
+	margin-bottom: 1em;
+}
+	
+/* 定义有序列表编号样式 */
+ol {
+	margin-top:0.5em; 
+	margin-left:2em;
+	list-style-type:decimal;
+}
+/* 定义无序列表编号样式 */
+ul {
+	margin-top: .5em; 
+	margin-left: 1.5em;
+}
+
+/* 定义混和列表编号样式 */
+ol ul {	
+	list-style: disc;
+	margin-top: .5em;	
+	margin-left: 1.5em;
+}
+
+li {
+	margin-bottom: 0.5em;
+	line-height:1.5em;
+}
+
+/* 定义表格具体样式 */ 
+table.Items {
+	margin:20px 0px 10px 0px;
+	line-height: 130%;
+}
+
+/* 定义背景颜色 */ 
+.gray {
+	background-color: #F1F1F1;
+	height:20px;
+}
+
+/* 定义表格标题样式 */ 
+caption {
+	line-height: 250%;
+}
+
+/* 定义超链接样式 */ 
+a:visited.caseindex {
+	color:#0000FF; 
+	text-decoration: none;
+}
+a:link.caseindex {
+	color: blue; 
+	text-decoration: none;
+}
+a:active.caseindex {
+	color:blue; 
+	text-decoration: none;
+}
+a:.caseindex {
+	onmouseover="this.style.colorblue"; 
+	onmouseout="this.style.colorblack";
+}
+
+/* 定义文本装饰为没有装饰 */ 
+.pop {
+	text-decoration: none;
+}
+
+/* 定义翻页按钮样式 */
+#PageBtn {
+	position:absolute;
+	right:25px;
+	top:8px;
+}
+#PageBtn img {
+	border:0px;
+	margin:0px 4px 0px 4px;
+}
+
+/* 定义封面样式 */ 
+#pic{
+	background:url(images/cover.JPG);
+	background-repeat:no-repeat;
+	width:350px;
+	height:400px;
+	float:left;
+	margin:80px 0px 0px 70px;
+	text-align:center;
+	line-height:18px;
+}
+
+#pic .song{
+	font-family: "黑体";
+	font-size:16px;
+	color:#7E7D7D;
+	letter-spacing:8px;
+	margin:315px 0px 0px 0px;
+	display:block;
+}
+
+#pic .hei{
+	font-family: "黑体";
+	font-size:20px;
+	color:#3B3B3C;
+	letter-spacing:20px;
+	display:block;
+	margin:0px 0px 0px 0px;
+}
+
+#pic .link{
+	font-size:14px;
+	letter-spacing:3px;
+	display:block;
+	margin:30px 30px 15px 0px;
+}

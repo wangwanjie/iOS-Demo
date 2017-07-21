@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B0FFCE1CAA102D005EA474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0FFCD1CAA102D005EA474 /* main.m */; };
+		18B0FFD11CAA102D005EA474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0FFD01CAA102D005EA474 /* AppDelegate.m */; };
+		18B0FFD41CAA102D005EA474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0FFD31CAA102D005EA474 /* ViewController.m */; };
+		18B0FFD71CAA102D005EA474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B0FFD51CAA102D005EA474 /* Main.storyboard */; };
+		18B0FFD91CAA102D005EA474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B0FFD81CAA102D005EA474 /* Assets.xcassets */; };
+		18B0FFDC1CAA102D005EA474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B0FFDA1CAA102D005EA474 /* LaunchScreen.storyboard */; };
+		18B0FFE51CAA1719005EA474 /* ReplaceTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0FFE41CAA1719005EA474 /* ReplaceTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18B0FFC91CAA102D005EA474 /* iOS码农公社群号106868842.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS码农公社群号106868842.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B0FFCD1CAA102D005EA474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B0FFCF1CAA102D005EA474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18B0FFD01CAA102D005EA474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18B0FFD21CAA102D005EA474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18B0FFD31CAA102D005EA474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18B0FFD61CAA102D005EA474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B0FFD81CAA102D005EA474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B0FFDB1CAA102D005EA474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B0FFDD1CAA102D005EA474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B0FFE31CAA1719005EA474 /* ReplaceTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceTextField.h; sourceTree = "<group>"; };
+		18B0FFE41CAA1719005EA474 /* ReplaceTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B0FFC61CAA102D005EA474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B0FFC01CAA102D005EA474 = {
+			isa = PBXGroup;
+			children = (
+				18B0FFCB1CAA102D005EA474 /* 实用功能性测试 */,
+				18B0FFCA1CAA102D005EA474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B0FFCA1CAA102D005EA474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B0FFC91CAA102D005EA474 /* iOS码农公社群号106868842.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B0FFCB1CAA102D005EA474 /* 实用功能性测试 */ = {
+			isa = PBXGroup;
+			children = (
+				18B0FFCF1CAA102D005EA474 /* AppDelegate.h */,
+				18B0FFD01CAA102D005EA474 /* AppDelegate.m */,
+				18B0FFD21CAA102D005EA474 /* ViewController.h */,
+				18B0FFD31CAA102D005EA474 /* ViewController.m */,
+				18B0FFD51CAA102D005EA474 /* Main.storyboard */,
+				18B0FFD81CAA102D005EA474 /* Assets.xcassets */,
+				18B0FFDA1CAA102D005EA474 /* LaunchScreen.storyboard */,
+				18B0FFDD1CAA102D005EA474 /* Info.plist */,
+				18B0FFCC1CAA102D005EA474 /* Supporting Files */,
+				18B0FFE31CAA1719005EA474 /* ReplaceTextField.h */,
+				18B0FFE41CAA1719005EA474 /* ReplaceTextField.m */,
+			);
+			path = "实用功能性测试";
+			sourceTree = "<group>";
+		};
+		18B0FFCC1CAA102D005EA474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B0FFCD1CAA102D005EA474 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B0FFC81CAA102D005EA474 /* iOS码农公社群号106868842 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B0FFE01CAA102D005EA474 /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842" */;
+			buildPhases = (
+				18B0FFC51CAA102D005EA474 /* Sources */,
+				18B0FFC61CAA102D005EA474 /* Frameworks */,
+				18B0FFC71CAA102D005EA474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS码农公社群号106868842";
+			productName = "实用功能性测试";
+			productReference = 18B0FFC91CAA102D005EA474 /* iOS码农公社群号106868842.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B0FFC11CAA102D005EA474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cheniue;
+				TargetAttributes = {
+					18B0FFC81CAA102D005EA474 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 18B0FFC41CAA102D005EA474 /* Build configuration list for PBXProject "iOS码农公社群号106868842" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B0FFC01CAA102D005EA474;
+			productRefGroup = 18B0FFCA1CAA102D005EA474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B0FFC81CAA102D005EA474 /* iOS码农公社群号106868842 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B0FFC71CAA102D005EA474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B0FFDC1CAA102D005EA474 /* LaunchScreen.storyboard in Resources */,
+				18B0FFD91CAA102D005EA474 /* Assets.xcassets in Resources */,
+				18B0FFD71CAA102D005EA474 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B0FFC51CAA102D005EA474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B0FFD41CAA102D005EA474 /* ViewController.m in Sources */,
+				18B0FFD11CAA102D005EA474 /* AppDelegate.m in Sources */,
+				18B0FFE51CAA1719005EA474 /* ReplaceTextField.m in Sources */,
+				18B0FFCE1CAA102D005EA474 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18B0FFD51CAA102D005EA474 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B0FFD61CAA102D005EA474 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B0FFDA1CAA102D005EA474 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B0FFDB1CAA102D005EA474 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B0FFDE1CAA102D005EA474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18B0FFDF1CAA102D005EA474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B0FFE11CAA102D005EA474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "实用功能性测试/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cheniue.-------";
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+			};
+			name = Debug;
+		};
+		18B0FFE21CAA102D005EA474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "实用功能性测试/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cheniue.-------";
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B0FFC41CAA102D005EA474 /* Build configuration list for PBXProject "iOS码农公社群号106868842" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B0FFDE1CAA102D005EA474 /* Debug */,
+				18B0FFDF1CAA102D005EA474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B0FFE01CAA102D005EA474 /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B0FFE11CAA102D005EA474 /* Debug */,
+				18B0FFE21CAA102D005EA474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B0FFC11CAA102D005EA474 /* Project object */;
+}

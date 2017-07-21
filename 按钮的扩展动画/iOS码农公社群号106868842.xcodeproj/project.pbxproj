@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DC41FB1D51C3F1007F83BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC41FA1D51C3F1007F83BD /* main.m */; };
+		04DC41FE1D51C3F1007F83BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC41FD1D51C3F1007F83BD /* AppDelegate.m */; };
+		04DC42011D51C3F2007F83BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC42001D51C3F2007F83BD /* ViewController.m */; };
+		04DC42041D51C3F2007F83BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DC42021D51C3F2007F83BD /* Main.storyboard */; };
+		04DC42061D51C3F2007F83BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC42051D51C3F2007F83BD /* Assets.xcassets */; };
+		04DC42091D51C3F2007F83BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DC42071D51C3F2007F83BD /* LaunchScreen.storyboard */; };
+		04DC42141D51C3F2007F83BD /* GWRoundButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC42131D51C3F2007F83BD /* GWRoundButtonTests.m */; };
+		04DC421F1D51C3F2007F83BD /* GWRoundButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC421E1D51C3F2007F83BD /* GWRoundButtonUITests.m */; };
+		04DC422E1D51C46C007F83BD /* GWRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC422D1D51C46C007F83BD /* GWRoundView.m */; };
+		04DC42301D51D276007F83BD /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC422F1D51D276007F83BD /* earth.png */; };
+		04DC42321D51D3E0007F83BD /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC42311D51D3E0007F83BD /* bg2.png */; };
+		04DC42381D51D615007F83BD /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC42371D51D615007F83BD /* bg1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DC42101D51C3F2007F83BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DC41EE1D51C3F1007F83BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DC41F51D51C3F1007F83BD;
+			remoteInfo = GWRoundButton;
+		};
+		04DC421B1D51C3F2007F83BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DC41EE1D51C3F1007F83BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DC41F51D51C3F1007F83BD;
+			remoteInfo = GWRoundButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DC41F61D51C3F1007F83BD /* iOS码农公社群号106868842.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS码农公社群号106868842.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DC41FA1D51C3F1007F83BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04DC41FC1D51C3F1007F83BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04DC41FD1D51C3F1007F83BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04DC41FF1D51C3F2007F83BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04DC42001D51C3F2007F83BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04DC42031D51C3F2007F83BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04DC42051D51C3F2007F83BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04DC42081D51C3F2007F83BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04DC420A1D51C3F2007F83BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC420F1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS码农公社群号106868842.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DC42131D51C3F2007F83BD /* GWRoundButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWRoundButtonTests.m; sourceTree = "<group>"; };
+		04DC42151D51C3F2007F83BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC421A1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS码农公社群号106868842.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DC421E1D51C3F2007F83BD /* GWRoundButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWRoundButtonUITests.m; sourceTree = "<group>"; };
+		04DC42201D51C3F2007F83BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC422C1D51C46C007F83BD /* GWRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWRoundView.h; sourceTree = "<group>"; };
+		04DC422D1D51C46C007F83BD /* GWRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWRoundView.m; sourceTree = "<group>"; };
+		04DC422F1D51D276007F83BD /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		04DC42311D51D3E0007F83BD /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		04DC42371D51D615007F83BD /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DC41F31D51C3F1007F83BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC420C1D51C3F2007F83BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC42171D51C3F2007F83BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DC41ED1D51C3F1007F83BD = {
+			isa = PBXGroup;
+			children = (
+				04DC42371D51D615007F83BD /* bg1.png */,
+				04DC422F1D51D276007F83BD /* earth.png */,
+				04DC42311D51D3E0007F83BD /* bg2.png */,
+				04DC41F81D51C3F1007F83BD /* GWRoundButton */,
+				04DC42121D51C3F2007F83BD /* GWRoundButtonTests */,
+				04DC421D1D51C3F2007F83BD /* GWRoundButtonUITests */,
+				04DC41F71D51C3F1007F83BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04DC41F71D51C3F1007F83BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DC41F61D51C3F1007F83BD /* iOS码农公社群号106868842.app */,
+				04DC420F1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */,
+				04DC421A1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04DC41F81D51C3F1007F83BD /* GWRoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				04DC41FC1D51C3F1007F83BD /* AppDelegate.h */,
+				04DC41FD1D51C3F1007F83BD /* AppDelegate.m */,
+				04DC41FF1D51C3F2007F83BD /* ViewController.h */,
+				04DC42001D51C3F2007F83BD /* ViewController.m */,
+				04DC422C1D51C46C007F83BD /* GWRoundView.h */,
+				04DC422D1D51C46C007F83BD /* GWRoundView.m */,
+				04DC42021D51C3F2007F83BD /* Main.storyboard */,
+				04DC42051D51C3F2007F83BD /* Assets.xcassets */,
+				04DC42071D51C3F2007F83BD /* LaunchScreen.storyboard */,
+				04DC420A1D51C3F2007F83BD /* Info.plist */,
+				04DC41F91D51C3F1007F83BD /* Supporting Files */,
+			);
+			path = GWRoundButton;
+			sourceTree = "<group>";
+		};
+		04DC41F91D51C3F1007F83BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04DC41FA1D51C3F1007F83BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DC42121D51C3F2007F83BD /* GWRoundButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				04DC42131D51C3F2007F83BD /* GWRoundButtonTests.m */,
+				04DC42151D51C3F2007F83BD /* Info.plist */,
+			);
+			path = GWRoundButtonTests;
+			sourceTree = "<group>";
+		};
+		04DC421D1D51C3F2007F83BD /* GWRoundButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04DC421E1D51C3F2007F83BD /* GWRoundButtonUITests.m */,
+				04DC42201D51C3F2007F83BD /* Info.plist */,
+			);
+			path = GWRoundButtonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DC41F51D51C3F1007F83BD /* iOS码农公社群号106868842 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DC42231D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842" */;
+			buildPhases = (
+				04DC41F21D51C3F1007F83BD /* Sources */,
+				04DC41F31D51C3F1007F83BD /* Frameworks */,
+				04DC41F41D51C3F1007F83BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS码农公社群号106868842";
+			productName = GWRoundButton;
+			productReference = 04DC41F61D51C3F1007F83BD /* iOS码农公社群号106868842.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DC420E1D51C3F2007F83BD /* iOS码农公社群号106868842Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DC42261D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842Tests" */;
+			buildPhases = (
+				04DC420B1D51C3F2007F83BD /* Sources */,
+				04DC420C1D51C3F2007F83BD /* Frameworks */,
+				04DC420D1D51C3F2007F83BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DC42111D51C3F2007F83BD /* PBXTargetDependency */,
+			);
+			name = "iOS码农公社群号106868842Tests";
+			productName = GWRoundButtonTests;
+			productReference = 04DC420F1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04DC42191D51C3F2007F83BD /* iOS码农公社群号106868842UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DC42291D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842UITests" */;
+			buildPhases = (
+				04DC42161D51C3F2007F83BD /* Sources */,
+				04DC42171D51C3F2007F83BD /* Frameworks */,
+				04DC42181D51C3F2007F83BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DC421C1D51C3F2007F83BD /* PBXTargetDependency */,
+			);
+			name = "iOS码农公社群号106868842UITests";
+			productName = GWRoundButtonUITests;
+			productReference = 04DC421A1D51C3F2007F83BD /* iOS码农公社群号106868842.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DC41EE1D51C3F1007F83BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04DC41F51D51C3F1007F83BD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					04DC420E1D51C3F2007F83BD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 04DC41F51D51C3F1007F83BD;
+					};
+					04DC42191D51C3F2007F83BD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 04DC41F51D51C3F1007F83BD;
+					};
+				};
+			};
+			buildConfigurationList = 04DC41F11D51C3F1007F83BD /* Build configuration list for PBXProject "iOS码农公社群号106868842" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DC41ED1D51C3F1007F83BD;
+			productRefGroup = 04DC41F71D51C3F1007F83BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DC41F51D51C3F1007F83BD /* iOS码农公社群号106868842 */,
+				04DC420E1D51C3F2007F83BD /* iOS码农公社群号106868842Tests */,
+				04DC42191D51C3F2007F83BD /* iOS码农公社群号106868842UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DC41F41D51C3F1007F83BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC42091D51C3F2007F83BD /* LaunchScreen.storyboard in Resources */,
+				04DC42381D51D615007F83BD /* bg1.png in Resources */,
+				04DC42301D51D276007F83BD /* earth.png in Resources */,
+				04DC42061D51C3F2007F83BD /* Assets.xcassets in Resources */,
+				04DC42041D51C3F2007F83BD /* Main.storyboard in Resources */,
+				04DC42321D51D3E0007F83BD /* bg2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC420D1D51C3F2007F83BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC42181D51C3F2007F83BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DC41F21D51C3F1007F83BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC42011D51C3F2007F83BD /* ViewController.m in Sources */,
+				04DC422E1D51C46C007F83BD /* GWRoundView.m in Sources */,
+				04DC41FE1D51C3F1007F83BD /* AppDelegate.m in Sources */,
+				04DC41FB1D51C3F1007F83BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC420B1D51C3F2007F83BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC42141D51C3F2007F83BD /* GWRoundButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC42161D51C3F2007F83BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC421F1D51C3F2007F83BD /* GWRoundButtonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DC42111D51C3F2007F83BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DC41F51D51C3F1007F83BD /* iOS码农公社群号106868842 */;
+			targetProxy = 04DC42101D51C3F2007F83BD /* PBXContainerItemProxy */;
+		};
+		04DC421C1D51C3F2007F83BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DC41F51D51C3F1007F83BD /* iOS码农公社群号106868842 */;
+			targetProxy = 04DC421B1D51C3F2007F83BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04DC42021D51C3F2007F83BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DC42031D51C3F2007F83BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04DC42071D51C3F2007F83BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DC42081D51C3F2007F83BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04DC42211D51C3F2007F83BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04DC42221D51C3F2007F83BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DC42241D51C3F2007F83BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GWRoundButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButton;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+			};
+			name = Debug;
+		};
+		04DC42251D51C3F2007F83BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GWRoundButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButton;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+			};
+			name = Release;
+		};
+		04DC42271D51C3F2007F83BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GWRoundButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButtonTests;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS码农公社群号106868842.app/iOS码农公社群号106868842";
+			};
+			name = Debug;
+		};
+		04DC42281D51C3F2007F83BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GWRoundButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButtonTests;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS码农公社群号106868842.app/iOS码农公社群号106868842";
+			};
+			name = Release;
+		};
+		04DC422A1D51C3F2007F83BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GWRoundButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButtonUITests;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+				TEST_TARGET_NAME = GWRoundButton;
+			};
+			name = Debug;
+		};
+		04DC422B1D51C3F2007F83BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GWRoundButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuchuang.GWRoundButtonUITests;
+				PRODUCT_NAME = "iOS码农公社群号106868842";
+				TEST_TARGET_NAME = GWRoundButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DC41F11D51C3F1007F83BD /* Build configuration list for PBXProject "iOS码农公社群号106868842" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC42211D51C3F2007F83BD /* Debug */,
+				04DC42221D51C3F2007F83BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DC42231D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC42241D51C3F2007F83BD /* Debug */,
+				04DC42251D51C3F2007F83BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DC42261D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC42271D51C3F2007F83BD /* Debug */,
+				04DC42281D51C3F2007F83BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DC42291D51C3F2007F83BD /* Build configuration list for PBXNativeTarget "iOS码农公社群号106868842UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC422A1D51C3F2007F83BD /* Debug */,
+				04DC422B1D51C3F2007F83BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04DC41EE1D51C3F1007F83BD /* Project object */;
+}
